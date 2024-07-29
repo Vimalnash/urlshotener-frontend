@@ -6,6 +6,7 @@
 
 APIs
     User-APIs
+    
         /api/user/signup
         /api/user/useractivationlink
         /api/user/login
@@ -17,8 +18,10 @@ APIs
         /api/user/dashboard
 
     Admin-APIs
+    
         /api/admin/shorturllist
         /api/admin/dashboard
 
     Public-APIs
+    
         /api/all/:shortname
