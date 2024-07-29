@@ -1,46 +1,24 @@
-# urlshortener-frontend
-    Used ReactJs, Tailwind CSS.
+# UrlShortener-Backend
+    Used Nodejs, Expressjs and mongoose for MongoDB Schema and Controllers
 
-Create ShortUrl to use in the necessary pages or messages.
+    Render URL - https://weddingwise-em-backend.onrender.com
 
-MenuBar Layouts
 
-Signup:
+APIs
+    User-APIs
+        /api/user/signup
+        /api/user/useractivationlink
+        /api/user/login
+        /api/user/forgotpassword
+        /api/user/resetpassword/resetlinkverify
+        /api/user/resetpassword/newpassword
+        /api/user/shortname/:shortname
+        /api/user/shorturllist
+        /api/user/dashboard
 
-    -> Use your proper email address to which activation link will be sent.
-    -> For First Time Signup. Click on the activation link which sent to your mail id.
+    Admin-APIs
+        /api/admin/shorturllist
+        /api/admin/dashboard
 
-Login:
-
-    -> First time signup users => Click on the activation link sent to your mail id to login and use the facilities.
-    -> Forgot Password
-        -> InCase forgot password.
-
-URL Shortener:
-
-    -> Copy and Paste your LongURL in the box "input your LongURL".
-    -> Use any "shortname" to better understand the longURL it can be characters, numbers.
-        -> Shortname must be unique (i.e) across all users.
-    -> Save.
-
-Report:
-
-    -> DashBoard
-        -> Displays Created ShortURLs Count -> 
-            Today,
-            ThisMonth,
-            Total
-        Note: BackTrack Facility provided (to Report Format in Table View ), Click on any of the total to backtrack.
-    
-    -> URLs Table View
-        -> Report Format in Table View
-    -> URLs Card View
-        -> Report Format in Card View
-
-Admin Login:
-
-    -> Reports -> Display All Users Created URLS
-
-User Login:
-
-    ->Reports -> Display Respective Users Created URLS
+    Public-APIs
+        /api/all/:shortname
